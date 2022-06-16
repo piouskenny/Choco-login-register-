@@ -45,4 +45,10 @@ h1.welcome_back {
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
+
+.icon {
+  width: 5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 /*# sourceMappingURL=form.css.map */
