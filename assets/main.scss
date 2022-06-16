@@ -1,0 +1,68 @@
+$colors: (
+    primary: #F2AA4CFF,
+);
+
+@function color ($color-name) {
+    @return map-get($colors, $color-name );
+}
+
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: #0000;
+    font-family: 'montserrat', sans-serif !important;
+
+    .navbar {
+        position: static;
+        width: 100%;
+    }
+
+    .hero {
+        background-color: color(primary);
+        clip-path: polygon(100% 0, 100% 33%, 0 64%, 0 36%, 0 0);
+        width: 100%;
+        height: 70vh;
+        position:absolute;
+        z-index: -1;
+
+        @include desktop {
+            clip-path: polygon(100% 0, 100% 33%, 100% 0, 0 64%, 0 0);
+        }
+
+        h1.welcome {
+            text-align: center;
+            color: #ffff;
+            padding-top: 4rem;
+            font-size: 50px;
+            font-weight: 400;
+            margin: auto;
+        }
+    }
+
+    .buttons {
+        margin: 21rem auto;
+    }
+}
+
+
+.btn-1 {
+    background-color: color(primary);
+    color: light;
+    border: 0;
+    height: 40px;
+}
+
+.btn-home {
+    width: 90%;
+}
