@@ -1,0 +1,44 @@
+.form-parent {
+  margin-top: 3rem;
+  color: #ffff;
+}
+
+.form-parent h1 {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.form-parent .form {
+  margin-top: 2rem;
+}
+
+.form-parent .form .form-group {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-parent .form .form-group .form-control {
+  background-color: #0000;
+  color: #ffff;
+  width: 80%;
+  margin: auto;
+}
+
+.form-parent .form .btn_action {
+  background-color: #F2AA4CFF;
+  color: light;
+  border: 0;
+  height: 40px;
+  width: 80%;
+  margin: auto;
+}
+
+h3.login {
+  color: #F2AA4CFF;
+}
+
+h1.welcome_back {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,52 @@
+$colors: (
+    primary: #F2AA4CFF,
+);
+
+@function color ($color-name) {
+    @return map-get($colors, $color-name );
+}
+
+.form-parent  {
+    margin-top: 3rem;
+    color: #ffff;
+
+    h1 {
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .form {
+        margin-top: 2rem;
+        // width: 90%;
+
+        .form-group {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            .form-control {
+                background-color: #0000;
+                color: #ffff;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        .btn_action {
+            background-color: color(primary);
+            color: light;
+            border: 0;
+            height: 40px;
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
+
+h3.login {
+    color: color(primary);
+}
+
+h1.welcome_back {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
